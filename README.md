@@ -145,6 +145,8 @@ Use `git diff` to confirm this.
 
 Then use cherry-picking to fix the COPYRIGHT year on the `release` branch as well
 
+Finally, create an push a `v1.1` tag on the release branch
+
 ## Task 12 - Rebase
 
 Make three commits that each add one line in a distinct, existing file.

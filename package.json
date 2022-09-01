@@ -1,0 +1,23 @@
+{
+  "name": "kata-git",
+  "version": "1.0.0",
+  "description": "A repository to learn git via various tasks",
+  "main": "index.js",
+  "scripts": {
+    "style:check": "standard *.js",
+    "style:fix": "standard --fix *.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmerejkowsky/kata-git.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dmerejkowsky/kata-git/issues"
+  },
+  "homepage": "https://github.com/dmerejkowsky/kata-git#readme",
+  "devDependencies": {
+    "standard": "^17.0.0"
+  }
+}

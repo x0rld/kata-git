@@ -147,24 +147,23 @@ Then use cherry-picking to fix the COPYRIGHT year on the `release` branch as wel
 
 Finally, create an push a `v1.1` tag on the release branch
 
-## Task 12 - Rebase
+## Task 12 - Interactive rebase
 
-Make three commits that each add one line in a distinct, existing file.
+Switch to the `dev` branch
 
-Use interactive rebase to put the commits in reverse order.
+Use an interactive rebase of `dev` on top of `main` so that the history
+looks like this (most recent last):
 
-Harder: make three commits that each add one line to the `index.html` file so you end up with:
-
-```html
-<ul>
-  <li>one</li>
-  <li>two</li>
-  <li>three</li>
-</ul>
+```
+* Refactor old code
+* Add transaction parser
+* Compute transaction price
 ```
 
-Use rebase to put the commits in the order "one - three - two". You will
-have to solve conflicts during the rebase - have fun.
+Hints:
+
+* You can do it in several passes
+* You can create a tag to verify your rebase does presevre all the changes
 
 ## Task 13 - Code review
 

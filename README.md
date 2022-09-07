@@ -5,7 +5,7 @@
 You should never use `push --force` or equivalent unless otherwise stated
 
 You should try and perform all the tasks listed here using the command line first,
-and relying on a tool like `sourcetree` after.
+and relying on a GUI later.
 
 ## Task 1 - Create a new empy repo
 

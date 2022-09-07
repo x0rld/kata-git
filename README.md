@@ -149,10 +149,20 @@ Finally, create an push a `v1.1` tag on the release branch
 
 ## Task 12 - Interactive rebase
 
-Switch to the `dev` branch
+Switch to the `dev` branch.
+
+Verify that there are 5 commits between `main` and `dev` (most recent last):
+
+```
+* Add transaction parser
+* Refactor old code
+* Compute transaction price
+* Fix issue on parser
+* Compute transaction price: add test
+```
 
 Use an interactive rebase of `dev` on top of `main` so that the history
-looks like this (most recent last):
+looks like this:
 
 ```
 * Refactor old code

@@ -135,17 +135,17 @@ Some as the previous one, but use `rebase` so that there is no merge commit in t
 
 * Alice & Bob: resolve the conflict and push the resolution
 
-## Task 11 - Cherry-picking
+## Task 11 - Code review using a feature branch
 
-If you look at the repo, you will see that the 'release' branch does not contain
-the commit that bumps the year in the `COPYRIGHT` file (which is expected since it was
-created in 2021).
+* Alice: Add some code in 'index.html'
+* Alice: Make sure to include a small mistake in the code you added
+* Alice: Make a commit and push it in a branch named 'feature/stuff'
+* Alice: Create a merge request (GitLab) or a pull request (GitHub)
+* Bob: look at Alice's changes and leave some comments about the typo
+* Alice: Use rebase or `git commit --amend` to address Bob's feedback and fix
+  the typo (you are allowed to use `push --force` this time)
+* Bob: Merge Alice's branch
 
-Use `git diff` to confirm this.
-
-Then use cherry-picking to fix the COPYRIGHT year on the `release` branch as well
-
-Finally, create an push a `v1.1` tag on the release branch
 
 ## Task 12 - Interactive rebase
 
@@ -175,14 +175,16 @@ Hints:
 * You can do it in several passes
 * You can create a tag to verify your rebase does presevre all the changes
 
-## Task 13 - Code review
 
-* Alice: Add some code in 'index.html'
-* Alice: Make sure to include a small mistake in the code you added
-* Alice: Make a commit and push it in a branch named 'fix-style'
-* Alice: Create a merge request (GitLab) or a pull request (GitHub)
-* Bob: look at Alice's changes and leave some comments about the typo
-* Alice: Use rebase or `git commit --amend` to address Bob's feedback and fix
-  the typo (you are allowed to use `push --force` this time)
-* Bob: Merge Alice's branch
+## Task 13 - Cherry-picking
+
+If you look at the repo, you will see that the 'release' branch does not contain
+the commit that bumps the year in the `COPYRIGHT` file (which is expected since it was
+created in 2021).
+
+Use `git diff` to confirm this.
+
+Then use cherry-picking to fix the COPYRIGHT year on the `release` branch as well
+
+Finally, create an push a `v1.1` tag on the release branch
 

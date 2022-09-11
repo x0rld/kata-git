@@ -37,6 +37,7 @@ You can either fork it on GitHub, or re-create it from scratch on GitLab for ins
 * Edit a file in this repo
 * Make a change
 * Make sure the changed are saved
+* Use the command `git status` the assert the presence of the change
 * Add the file with `git add <file>`
 * Make a commit with `git commit -m "<message>"`
 

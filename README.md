@@ -22,7 +22,8 @@ $ git commit -m "Initial commit"
 ```
 
 It's possible git will ask you to configure your name and email before
-allowing you to commit - if so, do what it says.
+allowing you to commit - if so, do what it says by running `git config` with the
+correct arguments
 
 Then verify using `git log` that you did create a commit
 
